@@ -8,7 +8,7 @@ import { ThemeContext, ThemeContextProvider } from "./contexts/ThemeContext";
 
 function App() {
 
-  const themes = useContext(ThemeContext);
+  // const themes = useContext(ThemeContext);
 
   return (
     <div className="App">

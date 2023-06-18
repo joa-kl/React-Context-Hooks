@@ -1,12 +1,21 @@
 // import React form 'react';
 
+import { useContext } from "react";
+import BookList from "./components/Booklist";
 import Navbar from "./components/Navbar";
+import { ThemeContext, ThemeContextProvider } from "./contexts/ThemeContext";
 
 
 function App() {
+
+  const themes = useContext(ThemeContext);
+
   return (
     <div className="App">
-     <Navbar/>
+      <ThemeContextProvider>
+        <Navbar />
+        <BookList />
+      </ThemeContextProvider>
     </div>
   );
 }

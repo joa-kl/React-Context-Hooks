@@ -4,6 +4,7 @@ import { useContext } from "react";
 import BookList from "./components/Booklist";
 import Navbar from "./components/Navbar";
 import { ThemeContext, ThemeContextProvider } from "./contexts/ThemeContext";
+import ThemeToggle from "./components/ThemeToggle";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ThemeContextProvider>
         <Navbar />
         <BookList />
+        <ThemeToggle />
       </ThemeContextProvider>
     </div>
   );

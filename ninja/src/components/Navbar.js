@@ -16,9 +16,9 @@ const Navbar = () => {
                 return (
                 <nav style={{background: theme.ui, color: theme.syntax}}>
                     <h1>Context App</h1>
-                        <div>
-                            {isAuthenticated ? "Logged in" : "logged out"}
-                        </div>
+                    <div>
+                        {isAuthenticated ? "Logged in" : "logged out"}
+                    </div>
                     <ul>
                         <li>Home</li>
                         <li>About</li>
